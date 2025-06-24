@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Circles Music Player</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    #playBtn {
-      position: absolute;
-      bottom: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #00ff0d;
-      color: #000;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      z-index: 100;
-      box-shadow: 0 0 10px #00ff0d;
-      transition: 0.3s ease;
-    }
-
-    #playBtn:hover {
-      background-color: #00cc0b;
-      box-shadow: 0 0 15px #00ff0d, 0 0 30px #00ff0d;
-    }
-  </style>
 </head>
 <body>
   <!-- Circle Animation -->
   <div class="container">
+    <!-- 21 Circles -->
     <div class="circle" style="--i:0"></div>
     <div class="circle" style="--i:1"></div>
     <div class="circle" style="--i:2"></div>
@@ -48,8 +31,7 @@
     <div class="circle" style="--i:18"></div>
     <div class="circle" style="--i:19"></div>
     <div class="circle" style="--i:20"></div>
-    
-    <!-- Play Music Button - now inside container -->
+    <!-- Play Music Button -->
     <button id="playBtn">Play Music</button>
   </div>
 
@@ -62,7 +44,6 @@
   <script>
     const playBtn = document.getElementById('playBtn');
     const bgMusic = document.getElementById('bgMusic');
-
     playBtn.addEventListener('click', () => {
       bgMusic.volume = 1.0;
       bgMusic.play();
