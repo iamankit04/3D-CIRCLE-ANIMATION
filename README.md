@@ -13,7 +13,7 @@ Background music triggered by user interaction (to comply with browser autoplay 
 Clean and modern UI with glowing neon effects
 
 🎧 Live Demo
-👉 Try it here
+👉 https://3dcircleanimationbyankit.netlify.app/
 
 🛠️ Tech Stack
 HTML5
